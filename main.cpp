@@ -11,7 +11,7 @@ int sockMerchant(int n, vector<int> ar) {
 
     // pick all elements one by one
     for (int i = 0; i <= n - 1; i++) {
-        // see if there is a pair for this picked element
+        // see if there is a pair for the picked element
         for (int j = i + 1; j <= n - 1; j++) {
             // advance comparison until picked element has not already been paired
             while (paired[i] == true) {
