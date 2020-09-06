@@ -7,7 +7,7 @@ vector<string> split_string(string);
 
 int sockMerchant(int n, vector<int> ar) {
     int pair = 0;
-    bool paired[n] {}; // initialize all parallel paired elements to false
+    bool paired[n] {}; // initialize all the parallel array elements to false
 
     // pick all elements one by one
     for (int i = 0; i <= n - 1; i++) {
@@ -16,7 +16,7 @@ int sockMerchant(int n, vector<int> ar) {
             // advance comparison until picked element has not already been paired
             while (paired[i] == true) {
                 i++;
-                // prevent out-of-bounds
+                // prevent out-of-bounds on last comparison
                 if (j < n - 1)
                     j++;
             }
