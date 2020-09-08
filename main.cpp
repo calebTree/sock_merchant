@@ -41,7 +41,7 @@ int main()
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     string ar_temp_temp;
-    cout << "Input string of n numbers seperated by a space: ";
+    cout << "Input string of n numbers separated by a space: ";
     getline(cin, ar_temp_temp);
 
     vector<string> ar_temp = split_string(ar_temp_temp);
